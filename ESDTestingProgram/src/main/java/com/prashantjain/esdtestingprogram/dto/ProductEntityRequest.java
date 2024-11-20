@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.*;
 import org.springframework.context.annotation.Primary;
 
-public record ProductEntity (
+public record ProductEntityRequest(
 
         @NotNull(message = "Product ID should be present")
         @Primary
